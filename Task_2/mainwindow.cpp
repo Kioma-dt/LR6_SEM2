@@ -21,6 +21,9 @@ MainWindow::MainWindow(QWidget* parent)
             &MainWindow::ShowTextSlot);
     connect(ui->buttonClearText, &QPushButton::clicked, this,
             &MainWindow::ClearTextSlot);
+
+    this->ClearArraySlot();
+    this->ClearTextSlot();
 }
 
 MainWindow::~MainWindow() {
